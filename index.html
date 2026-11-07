@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
+  <link rel="preload" as="image" href="assets/images/watch.png" fetchpriority="high" />
   <link rel="stylesheet" href="assets/css/home.css" />
 </head>
 <body>
@@ -22,7 +23,7 @@
     <!-- Navigation -->
     <header class="nav">
       <a href="index.html" class="brand" aria-label="SALIM home">
-        <img src="assets/images/logo.png" alt="" class="brand__logo" />
+        <img decoding="async" src="assets/images/logo.png" alt="" class="brand__logo" />
         <span class="brand__name">SALIM</span>
       </a>
 
@@ -80,7 +81,7 @@
  
       </div></div>
       <div class="watch">
-        <img src="assets/images/watch.png" alt="Gold SALIM watch" />
+        <img decoding="async" fetchpriority="high" src="assets/images/watch.png" alt="Gold SALIM watch" />
       </div>
     </div>
 
@@ -91,7 +92,7 @@
     <aside class="thumb" aria-label="Watch slider">
       <button class="thumb__arrow thumb__arrow--prev" id="prev" type="button" aria-label="Previous watch">&larr;</button>
       <div class="thumb__card">
-        <img src="assets/images/watch.png" alt="" id="thumbImg" />
+        <img decoding="async" src="assets/images/watch.png" alt="" id="thumbImg" />
       </div>
       <button class="thumb__arrow thumb__arrow--prev" id="prev" type="button" aria-label="Previous watch">&larr;</button>
     </aside>
@@ -114,7 +115,7 @@
   <header class="dock" id="dock">
     <div class="dock__left">
       <a href="#hero" class="dock__brand" aria-label="SALIM home">
-        <img src="assets/images/logo.png" alt="" class="dock__logo" />
+        <img decoding="async" src="assets/images/logo.png" alt="" class="dock__logo" />
         <span>SALIM</span>
       </a>
       <nav class="dock__links" id="dockLinks" aria-label="Main">
@@ -173,7 +174,7 @@
         <article class="shop-card" data-shop-category="steel">
           <div class="shop-card__visual">
             <span class="shop-card__index">01 / STEEL</span>
-            <img src="assets/images/watch.png" alt="Silver-tone watch with a dark dial" loading="lazy" />
+            <img decoding="async" src="assets/images/watch.png" alt="Silver-tone watch with a dark dial" loading="lazy" />
             <span class="shop-card__mark" aria-hidden="true">S</span>
             <button class="btn btn--solid shop-card__add" type="button" data-cart-add="daily-essential" data-product-name="The Daily Essential">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
@@ -192,7 +193,7 @@
         <article class="shop-card" data-shop-category="gold">
           <div class="shop-card__visual">
             <span class="shop-card__index">02 / GOLD</span>
-            <img src="assets/images/watch2.png" alt="Gold-tone watch with a dark dial" loading="lazy" />
+            <img decoding="async" src="assets/images/watch2.png" alt="Gold-tone watch with a dark dial" loading="lazy" />
             <span class="shop-card__mark" aria-hidden="true">S</span>
             <button class="btn btn--solid shop-card__add" type="button" data-cart-add="gold-classic" data-product-name="The Gold Classic">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
@@ -211,7 +212,7 @@
         <article class="shop-card" data-shop-category="diamond">
           <div class="shop-card__visual">
             <span class="shop-card__index">03 / DIAMOND</span>
-            <img src="assets/images/watch3.png" alt="Gold-tone watch with a diamond-set bezel and bracelet" loading="lazy" />
+            <img decoding="async" src="assets/images/watch3.png" alt="Gold-tone watch with a diamond-set bezel and bracelet" loading="lazy" />
             <span class="shop-card__mark" aria-hidden="true">S</span>
             <button class="btn btn--solid shop-card__add" type="button" data-cart-add="statement-piece" data-product-name="The Statement Piece">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
@@ -244,25 +245,25 @@
           <p class="collection-choices__label">THE EDITS <span>04</span></p>
           <button class="collection-choice is-active" type="button" data-collection-select="gold" aria-pressed="true">
             <span class="collection-choice__number">01</span>
-            <img src="assets/images/watch2.png" alt="" />
+            <img decoding="async" loading="lazy" src="assets/images/watch2.png" alt="" />
             <span class="collection-choice__name">Gold<br>Classics</span>
             <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
           </button>
           <button class="collection-choice" type="button" data-collection-select="diamond" aria-pressed="false">
             <span class="collection-choice__number">02</span>
-            <img src="assets/images/watch3.png" alt="" />
+            <img decoding="async" loading="lazy" src="assets/images/watch3.png" alt="" />
             <span class="collection-choice__name">Diamond<br>Edition</span>
             <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
           </button>
           <button class="collection-choice" type="button" data-collection-select="everyday" aria-pressed="false">
             <span class="collection-choice__number">03</span>
-            <img src="assets/images/watch.png" alt="" />
+            <img decoding="async" loading="lazy" src="assets/images/watch.png" alt="" />
             <span class="collection-choice__name">Everyday<br>Icons</span>
             <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
           </button>
           <button class="collection-choice" type="button" data-collection-select="limited" aria-pressed="false">
             <span class="collection-choice__number">04</span>
-            <img src="assets/images/watch2.png" alt="" />
+            <img decoding="async" loading="lazy" src="assets/images/watch2.png" alt="" />
             <span class="collection-choice__name">Limited<br>Pieces</span>
             <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
           </button>
@@ -287,7 +288,7 @@
           <span class="collection-art__halo"></span>
           <span class="collection-art__orbit collection-art__orbit--one"></span>
           <span class="collection-art__orbit collection-art__orbit--two"></span>
-          <img class="collection-art__image is-active" src="assets/images/watch2.png" alt="" />
+          <img decoding="async" loading="lazy" class="collection-art__image is-active" src="assets/images/watch2.png" alt="" />
           <span class="collection-art__signature">S<span>.</span></span>
           <span class="collection-art__caption">TIME, WELL CHOSEN</span>
         </div>
@@ -411,8 +412,8 @@
       <div class="mega__right">
         <div class="mega__stage">
           <span class="mega__orb" aria-hidden="true"></span>
-          <img class="mega__img is-active" src="assets/images/watch2.png" alt="" />
-          <img class="mega__img" alt="" />
+          <img decoding="async" loading="lazy" class="mega__img is-active" src="assets/images/watch2.png" alt="" />
+          <img decoding="async" loading="lazy" class="mega__img" alt="" />
         </div>
         <div class="mega__meta in">
           <h3 class="mega__title">Gold Classics</h3>
@@ -439,36 +440,36 @@
         <div class="menu__cat is-active" style="--i:0">
           <a href="#collection" class="menu__row" data-collection-key="gold" data-img="assets/images/watch2.png" data-title="Gold Classics" data-desc="Polished gold cases and clean dials, chosen for people who notice the details." data-count="12 PIECES"><span class="num">01</span><span class="name">Gold Classics</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
           <div class="menu__fold"><div class="menu__roll">
-            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Oyster Gold 36" data-count="GOLD CLASSICS"><img src="assets/images/watch.png" alt="" />Oyster Gold 36</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Heritage Date" data-count="GOLD CLASSICS"><img src="assets/images/watch2.png" alt="" />Heritage Date</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Crown Linear" data-count="GOLD CLASSICS"><img src="assets/images/watch3.png" alt="" />Crown Linear</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Oyster Gold 36" data-count="GOLD CLASSICS"><img decoding="async" loading="lazy" src="assets/images/watch.png" alt="" />Oyster Gold 36</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Heritage Date" data-count="GOLD CLASSICS"><img decoding="async" loading="lazy" src="assets/images/watch2.png" alt="" />Heritage Date</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Crown Linear" data-count="GOLD CLASSICS"><img decoding="async" loading="lazy" src="assets/images/watch3.png" alt="" />Crown Linear</a>
           </div></div>
         </div>
 
         <div class="menu__cat" style="--i:1">
           <a href="#collection" class="menu__row" data-collection-key="diamond" data-img="assets/images/watch3.png" data-title="Diamond Edition" data-desc="Hand-set stones that catch every bit of light. Made to be noticed." data-count="8 PIECES"><span class="num">02</span><span class="name">Diamond Edition</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
           <div class="menu__fold"><div class="menu__roll">
-            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Iced Crown" data-count="DIAMOND EDITION"><img src="assets/images/watch3.png" alt="" />Iced Crown</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Pave Lady" data-count="DIAMOND EDITION"><img src="assets/images/watch.png" alt="" />Pave Lady</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Diamond Bezel" data-count="DIAMOND EDITION"><img src="assets/images/watch2.png" alt="" />Diamond Bezel</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Iced Crown" data-count="DIAMOND EDITION"><img decoding="async" loading="lazy" src="assets/images/watch3.png" alt="" />Iced Crown</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Pave Lady" data-count="DIAMOND EDITION"><img decoding="async" loading="lazy" src="assets/images/watch.png" alt="" />Pave Lady</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Diamond Bezel" data-count="DIAMOND EDITION"><img decoding="async" loading="lazy" src="assets/images/watch2.png" alt="" />Diamond Bezel</a>
           </div></div>
         </div>
 
         <div class="menu__cat" style="--i:2">
           <a href="#collection" class="menu__row" data-collection-key="everyday" data-img="assets/images/watch.png" data-title="Everyday Icons" data-desc="Clean black dials and gold cases you can wear every single day." data-count="15 PIECES"><span class="num">03</span><span class="name">Everyday Icons</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
           <div class="menu__fold"><div class="menu__roll">
-            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Noir Date" data-count="EVERYDAY ICONS"><img src="assets/images/watch2.png" alt="" />Noir Date</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Slate 38" data-count="EVERYDAY ICONS"><img src="assets/images/watch3.png" alt="" />Slate 38</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Daily Gold" data-count="EVERYDAY ICONS"><img src="assets/images/watch.png" alt="" />Daily Gold</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Noir Date" data-count="EVERYDAY ICONS"><img decoding="async" loading="lazy" src="assets/images/watch2.png" alt="" />Noir Date</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Slate 38" data-count="EVERYDAY ICONS"><img decoding="async" loading="lazy" src="assets/images/watch3.png" alt="" />Slate 38</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Daily Gold" data-count="EVERYDAY ICONS"><img decoding="async" loading="lazy" src="assets/images/watch.png" alt="" />Daily Gold</a>
           </div></div>
         </div>
 
         <div class="menu__cat" style="--i:3">
           <a href="#collection" class="menu__row" data-collection-key="limited" data-img="assets/images/watch3.png" data-title="Limited Pieces" data-desc="Small runs, rare finishes. A watch worth passing on." data-count="5 PIECES"><span class="num">04</span><span class="name">Limited Pieces</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
           <div class="menu__fold"><div class="menu__roll">
-            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Series 01" data-count="LIMITED PIECES"><img src="assets/images/watch.png" alt="" />Series 01</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Founders Cut" data-count="LIMITED PIECES"><img src="assets/images/watch3.png" alt="" />Founders Cut</a>
-            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Atelier No. 5" data-count="LIMITED PIECES"><img src="assets/images/watch2.png" alt="" />Atelier No. 5</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Series 01" data-count="LIMITED PIECES"><img decoding="async" loading="lazy" src="assets/images/watch.png" alt="" />Series 01</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Founders Cut" data-count="LIMITED PIECES"><img decoding="async" loading="lazy" src="assets/images/watch3.png" alt="" />Founders Cut</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Atelier No. 5" data-count="LIMITED PIECES"><img decoding="async" loading="lazy" src="assets/images/watch2.png" alt="" />Atelier No. 5</a>
           </div></div>
         </div>
 
@@ -544,7 +545,9 @@
           setTimeout(() => window.dispatchEvent(new Event("resize")), 480); // re-align the active pill
         }
       }
-      window.addEventListener("scroll", update, { passive: true });
+      let ticking = false;
+      const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } };
+      window.addEventListener("scroll", onScroll, { passive: true });
       window.addEventListener("resize", update);
       update();
     })();

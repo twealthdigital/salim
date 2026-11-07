@@ -428,7 +428,12 @@ data.forEach((d) => { const i = new Image(); i.src = d.img; });
 
   }
 
-  window.addEventListener("scroll", updateDock, { passive: true });
+  let dockTicking = false;
+  window.addEventListener("scroll", () => {
+    if (dockTicking) return;
+    dockTicking = true;
+    requestAnimationFrame(() => { dockTicking = false; updateDock(); });
+  }, { passive: true });
   window.addEventListener("resize", () => {
     updateDock();
     pillTo(activeLink);
@@ -652,7 +657,7 @@ data.forEach((d) => { const i = new Image(); i.src = d.img; });
   });
 
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMega(); });
-  window.addEventListener("scroll", closeMega, { passive: true });
+  window.addEventListener("scroll", () => { if (mega.classList.contains("is-open")) closeMega(); }, { passive: true });
   window.addEventListener("load", () => activeRow && hlTo(activeRow));
   selectRow(megaRows[0], true);
 
@@ -704,7 +709,23 @@ data.forEach((d) => { const i = new Image(); i.src = d.img; });
     c.addEventListener("mouseenter", () => menuSelect(c));
     c.querySelector(".menu__row").addEventListener("focus", () => menuSelect(c));
   });
+  // touch: first tap opens a category, a second tap on the open one follows the link
+  let tapWasActive = true, tapIsTouch = false;
+  menu.addEventListener("pointerdown", (e) => {
+    const cat = e.target.closest(".menu__cat");
+    tapIsTouch = e.pointerType !== "mouse";
+    tapWasActive = cat ? cat.classList.contains("is-active") : true;
+  });
   menu.addEventListener("click", (e) => {
+    const cat = e.target.closest(".menu__cat");
+    const row = e.target.closest(".menu__row");
+    if (tapIsTouch && cat && row && !tapWasActive) {
+      e.preventDefault();
+      menuSelect(cat);
+      tapIsTouch = false;
+      return;
+    }
+    tapIsTouch = false;
     const link = e.target.closest("a");
     if (link) {
       const collectionLink = link.dataset.collectionKey
@@ -718,7 +739,7 @@ data.forEach((d) => { const i = new Image(); i.src = d.img; });
     if (menu.classList.contains("is-open") && !menu.contains(e.target) && !e.target.closest(".burger, .dock__burger")) closeMenu();
   });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
-  window.addEventListener("scroll", closeMenu, { passive: true });
+  window.addEventListener("scroll", () => { if (menu.classList.contains("is-open")) closeMenu(); }, { passive: true });
   window.addEventListener("resize", closeMenu);
 
   // ===== Cart drawer =====
