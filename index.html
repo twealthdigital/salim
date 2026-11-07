@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SALIM | Timepieces worth keeping</title>
+  <meta name="description" content="SALIM brings you authentic, hand-picked watches built to last." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+<body>
+
+
+  <main class="hero" id="hero">
+
+   
+
+    <!-- Navigation -->
+    <header class="nav">
+      <a href="index.html" class="brand" aria-label="SALIM home">
+        <img src="assets/images/logo.png" alt="" class="brand__logo" />
+        <span class="brand__name">SALIM</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#shop">SHOP</a>
+        <span class="has-mega"><a href="#collection">COLLECTION</a><button type="button" class="chev-btn" aria-label="Show collections"><svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.5l3 3 3-3"/></svg></button></span>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <div class="nav__right">
+        <a href="#cart" class="nav__cta" aria-label="Cart">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
+          Cart
+          <span class="cart-count" aria-hidden="true">0</span>
+        </a>
+        <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Language switch (vertical) -->
+    <ul class="lang" id="lang">
+      <li><button type="button" data-lang="it">it</button></li>
+      <li><button type="button" data-lang="en" class="is-active">en</button></li>
+      <li><button type="button" data-lang="ru">ru</button></li>
+    </ul>
+
+    <!-- Headline + call to action -->
+    <section class="intro">
+      <h1 class="title">
+        <span class="title__solid">Wear</span>
+        <span class="title__outline">Time.</span>
+      </h1>
+      <p class="lead">
+        Authentic, hand-picked watches built to last. Find the one that tells your story.
+      </p>
+      <div class="actions">
+        <a href="#collection" class="btn btn--solid">Shop the collection</a>
+        <a href="#about" class="btn btn--ghost">Our story</a>
+      </div>
+    </section>
+
+    <!-- Main watch -->
+    <div class="stage" id="stage">
+      <!-- Notches + scroll hint: they travel with the watch -->
+      <div class="notchmask"><div class="notches">
+        <svg class="notch notch--top" viewBox="0 -1 400 57" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 -1 L0 0 C70 0 90 56 150 56 L250 56 C310 56 330 0 400 0 L400 -1 Z" />
+        </svg>
+        <svg class="notch notch--bottom" viewBox="0 -1 400 57" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 -1 L0 0 C70 0 90 56 150 56 L250 56 C310 56 330 0 400 0 L400 -1 Z" />
+        </svg>
+ 
+      </div></div>
+      <div class="watch">
+        <img src="assets/images/watch.png" alt="Gold SALIM watch" />
+      </div>
+    </div>
+
+    <!-- Scroll hint: fixed in place, doesn't move with the slide -->
+    <a href="#collection" class="scroll">Scroll to discover</a>
+
+    <!-- Thumbnail slider -->
+    <aside class="thumb" aria-label="Watch slider">
+      <button class="thumb__arrow thumb__arrow--prev" id="prev" type="button" aria-label="Previous watch">&larr;</button>
+      <div class="thumb__card">
+        <img src="assets/images/watch.png" alt="" id="thumbImg" />
+      </div>
+      <button class="thumb__arrow thumb__arrow--prev" id="prev" type="button" aria-label="Previous watch">&larr;</button>
+    </aside>
+
+
+    <div class="quality-counter" aria-label="100 percent premium quality">
+      <span class="quality-counter__value">100%</span>
+      <span class="quality-counter__label">Premium<br>quality</span>
+    </div>
+
+    <!-- Stats counter -->
+    <div class="stats" id="stats" aria-label="SALIM in numbers">
+      <div class="stat"><span class="stat__num"><b data-count="12">0</b><i>+</i></span><span class="stat__label">Years of<br>experience</span></div>
+      <div class="stat"><span class="stat__num"><b data-count="5">0</b>K<i>+</i></span><span class="stat__label">Happy<br>clients</span></div>
+    </div>
+
+  </main>
+
+  <!-- Dropdown header: two separate pieces, appear when the main header is out of view -->
+  <header class="dock" id="dock">
+    <div class="dock__left">
+      <a href="#hero" class="dock__brand" aria-label="SALIM home">
+        <img src="assets/images/logo.png" alt="" class="dock__logo" />
+        <span>SALIM</span>
+      </a>
+      <nav class="dock__links" id="dockLinks" aria-label="Main">
+        <span class="dock__pill" aria-hidden="true"></span>
+        <a href="#shop">SHOP</a>
+        <a href="#collection" class="dock__has-drop">COLLECTION</a>
+        <button type="button" class="chev-btn chev-btn--dock" aria-label="Show collections"><svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.5l3 3 3-3"/></svg></button>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+
+    <div class="dock__right">
+      <a href="#cart" class="dock__cta" aria-label="Cart">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
+        Cart
+        <span class="cart-count" aria-hidden="true">0</span>
+      </a>
+      <button class="dock__burger" id="dockBurger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Page sections">
+    <span class="mobile-nav__pill" aria-hidden="true"></span>
+    <a href="#hero" aria-label="Home"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.5 12 4l8.5 7.5"/><path d="M6 10v9.5h4.5V14h3v5.5H18V10"/></svg><span class="lbl">HOME</span></a>
+    <a href="#shop" aria-label="Shop"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="lbl">SHOP</span></a>
+    <a href="#collection" aria-label="Collection"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span class="lbl">COLLECTION</span></a>
+    <a href="#about" aria-label="About"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><path d="M12 7.6v.1"/></svg><span class="lbl">ABOUT</span></a>
+    <a href="#contact" aria-label="Contact"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg><span class="lbl">CONTACT</span></a>
+  </nav>
+
+  <section class="page-section shop-section" id="shop" aria-labelledby="shopTitle">
+    <div class="shop-section__inner">
+      <header class="shop-intro">
+        <div>
+          <p class="shop-eyebrow">THE SALIM EDIT <span>—</span> 01 / 03</p>
+          <h2 id="shopTitle">Time, <em>well chosen.</em></h2>
+          <p class="shop-intro__copy">A considered selection of standout pieces. Find the finish that feels like you.</p>
+        </div>
+ 
+      </header>
+
+      <div class="shop-tools">
+        <p>Selected timepieces <span>·</span> <span data-shop-count aria-live="polite">03</span> pieces</p>
+        <div class="shop-filters" role="group" aria-label="Filter watches by finish">
+          <button class="shop-filter is-active" type="button" data-shop-filter="all" aria-pressed="true">All pieces</button>
+          <button class="shop-filter" type="button" data-shop-filter="steel" aria-pressed="false">Steel</button>
+          <button class="shop-filter" type="button" data-shop-filter="gold" aria-pressed="false">Gold</button>
+          <button class="shop-filter" type="button" data-shop-filter="diamond" aria-pressed="false">Diamond</button>
+        </div>
+      </div>
+
+      <div class="shop-grid" id="shopPieces" aria-live="polite">
+        <article class="shop-card" data-shop-category="steel">
+          <div class="shop-card__visual">
+            <span class="shop-card__index">01 / STEEL</span>
+            <img src="assets/images/watch.png" alt="Silver-tone watch with a dark dial" loading="lazy" />
+            <span class="shop-card__mark" aria-hidden="true">S</span>
+            <button class="btn btn--solid shop-card__add" type="button" data-cart-add="daily-essential" data-product-name="The Daily Essential">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
+              <span>Add to cart</span>
+            </button>
+          </div>
+          <div class="shop-card__info">
+            <div>
+              <p class="shop-card__category">EVERYDAY ICONS</p>
+              <h3>The Daily Essential</h3>
+              <p class="shop-card__description">Brushed steel and a dark dial for everyday wear.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="shop-card" data-shop-category="gold">
+          <div class="shop-card__visual">
+            <span class="shop-card__index">02 / GOLD</span>
+            <img src="assets/images/watch2.png" alt="Gold-tone watch with a dark dial" loading="lazy" />
+            <span class="shop-card__mark" aria-hidden="true">S</span>
+            <button class="btn btn--solid shop-card__add" type="button" data-cart-add="gold-classic" data-product-name="The Gold Classic">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
+              <span>Add to cart</span>
+            </button>
+          </div>
+          <div class="shop-card__info">
+            <div>
+              <p class="shop-card__category">GOLD CLASSICS</p>
+              <h3>The Gold Classic</h3>
+              <p class="shop-card__description">A warm gold finish paired with a clean, dark dial.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="shop-card" data-shop-category="diamond">
+          <div class="shop-card__visual">
+            <span class="shop-card__index">03 / DIAMOND</span>
+            <img src="assets/images/watch3.png" alt="Gold-tone watch with a diamond-set bezel and bracelet" loading="lazy" />
+            <span class="shop-card__mark" aria-hidden="true">S</span>
+            <button class="btn btn--solid shop-card__add" type="button" data-cart-add="statement-piece" data-product-name="The Statement Piece">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 7H6"/></svg>
+              <span>Add to cart</span>
+            </button>
+          </div>
+          <div class="shop-card__info">
+            <div>
+              <p class="shop-card__category">DIAMOND EDITION</p>
+              <h3>The Statement Piece</h3>
+              <p class="shop-card__description">A diamond-set finish designed to catch the light.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="shop-note">A small edit to start. Product details and availability coming soon.</p>
+    </div>
+  </section>
+  <section class="page-section collection-section" id="collection" aria-labelledby="collectionHeading">
+    <div class="collection-shell">
+      <header class="collection-heading">
+        <p class="collection-eyebrow">THE SALIM COLLECTION</p>
+        <h2 id="collectionHeading">Timepieces with <em>character.</em></h2>
+        <p>Explore the edits. Find the piece that feels like it was always yours.</p>
+      </header>
+
+      <div class="collection-showcase">
+        <nav class="collection-choices" aria-label="Choose a collection">
+          <p class="collection-choices__label">THE EDITS <span>04</span></p>
+          <button class="collection-choice is-active" type="button" data-collection-select="gold" aria-pressed="true">
+            <span class="collection-choice__number">01</span>
+            <img src="assets/images/watch2.png" alt="" />
+            <span class="collection-choice__name">Gold<br>Classics</span>
+            <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+          </button>
+          <button class="collection-choice" type="button" data-collection-select="diamond" aria-pressed="false">
+            <span class="collection-choice__number">02</span>
+            <img src="assets/images/watch3.png" alt="" />
+            <span class="collection-choice__name">Diamond<br>Edition</span>
+            <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+          </button>
+          <button class="collection-choice" type="button" data-collection-select="everyday" aria-pressed="false">
+            <span class="collection-choice__number">03</span>
+            <img src="assets/images/watch.png" alt="" />
+            <span class="collection-choice__name">Everyday<br>Icons</span>
+            <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+          </button>
+          <button class="collection-choice" type="button" data-collection-select="limited" aria-pressed="false">
+            <span class="collection-choice__number">04</span>
+            <img src="assets/images/watch2.png" alt="" />
+            <span class="collection-choice__name">Limited<br>Pieces</span>
+            <svg class="collection-choice__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+          </button>
+          <p class="collection-choices__foot">A watch for every chapter.</p>
+        </nav>
+
+        <div class="collection-copy" aria-live="polite">
+          <p class="collection-copy__index"><span data-collection-index>01</span> <i>/</i> 04</p>
+          <p class="collection-copy__eyebrow" data-collection-kicker>THE SIGNATURE EDIT</p>
+          <h3 data-collection-title>Gold<br><em>Classics.</em></h3>
+          <p class="collection-copy__description" data-collection-description>Polished gold finishes and considered details. Timeless pieces made to be worn, noticed, and kept.</p>
+          <div class="collection-copy__footer">
+            <span class="collection-copy__count" data-collection-count>12 PIECES</span>
+            <a class="btn btn--ghost collection-copy__link" href="#shop">
+              Explore pieces
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M8.5 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="collection-art" aria-hidden="true">
+          <span class="collection-art__halo"></span>
+          <span class="collection-art__orbit collection-art__orbit--one"></span>
+          <span class="collection-art__orbit collection-art__orbit--two"></span>
+          <img class="collection-art__image is-active" src="assets/images/watch2.png" alt="" />
+          <span class="collection-art__signature">S<span>.</span></span>
+          <span class="collection-art__caption">TIME, WELL CHOSEN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="page-section about-section" id="about" aria-labelledby="aboutTitle">
+    <div class="about-inner">
+      <p class="about-eyebrow">ABOUT SALIM</p>
+      <h2 class="about-title" id="aboutTitle">
+        <span>Worn today.</span>
+        <span class="about-title__outline">Kept for life.</span>
+      </h2>
+
+      <div class="about-body">
+        <div class="about-copy">
+          <p class="about-lead">SALIM is a watch house for people who notice the details.</p>
+          <p class="about-description">Every watch in the collection is hand picked, checked for authenticity and chosen because it earns its place on the wrist. From everyday icons to limited pieces, the idea stays the same: fewer watches, chosen better.</p>
+          <div class="about-actions">
+            <a class="btn about-link" href="#shop">Shop the collection</a>
+            <a class="btn about-link about-link--ghost" href="#collection">See the edits</a>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="about-stat"><span class="about-stat__num"><span data-count="12">0</span><i>+</i></span><span class="about-stat__label">Years of experience</span></div>
+          <div class="about-stat"><span class="about-stat__num"><span data-count="5">0</span>K<i>+</i></span><span class="about-stat__label">Happy clients</span></div>
+        </div>
+      </div>
+
+      <div class="about-values" aria-label="What defines SALIM">
+        <article class="about-value">
+          <span class="about-value__number">01</span>
+          <h3>Authentic</h3>
+          <p>Every watch is genuine and checked before it reaches you.</p>
+        </article>
+        <article class="about-value">
+          <span class="about-value__number">02</span>
+          <h3>Hand picked</h3>
+          <p>We choose each piece for its finish, its dial and how it wears.</p>
+        </article>
+        <article class="about-value">
+          <span class="about-value__number">03</span>
+          <h3>Built to last</h3>
+          <p>Solid cases and clean details, made to be worn for years and passed on.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="page-section contact-section" id="contact" aria-labelledby="contactTitle">
+    <div class="contact-marquee" aria-hidden="true">
+      <div class="contact-marquee__track">
+        <span>Say hello</span><i></i><span class="is-outline">Say hello</span><i></i><span>Say hello</span><i></i><span class="is-outline">Say hello</span><i></i>
+        <span>Say hello</span><i></i><span class="is-outline">Say hello</span><i></i><span>Say hello</span><i></i><span class="is-outline">Say hello</span><i></i>
+      </div>
+    </div>
+
+    <div class="contact-inner">
+      <p class="contact-eyebrow" data-reveal>CONTACT</p>
+      <h2 class="contact-title" id="contactTitle" data-reveal>
+        <span>Let's talk</span>
+        <span class="contact-title__outline">watches.</span>
+      </h2>
+
+      <div class="contact-grid">
+        <div class="contact-composer" data-reveal style="--d:.1s">
+          <h3 class="contact-h">What brings you in?</h3>
+          <div class="contact-chips" role="radiogroup" aria-label="Topic">
+            <label class="contact-chip"><input type="radio" name="contactTopic" value="I'd like to buy a watch" checked><span>Buy a watch</span></label>
+            <label class="contact-chip"><input type="radio" name="contactTopic" value="I'd like to sell or trade a watch"><span>Sell or trade</span></label>
+            <label class="contact-chip"><input type="radio" name="contactTopic" value="I need a watch serviced"><span>Service</span></label>
+            <label class="contact-chip"><input type="radio" name="contactTopic" value="I'm looking for a gift"><span>A gift</span></label>
+          </div>
+
+          <div class="contact-fields">
+            <label class="contact-field"><span>Your name</span><input id="contactName" type="text" placeholder="Fortune" autocomplete="given-name" /></label>
+            <label class="contact-field"><span>Which watch?</span><input id="contactWatch" type="text" placeholder="Any model, or just a budget" /></label>
+          </div>
+
+          <div class="contact-bubble" aria-live="polite">
+            <span class="contact-bubble__label">Your message</span>
+            <p id="contactBubble"></p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn contact-btn" id="contactWa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+            <a class="btn contact-btn contact-btn--ghost" id="contactMail" href="#">Send by email</a>
+          </div>
+        </div>
+
+        <div class="contact-side" data-reveal style="--d:.22s">
+ 
+          <ul class="contact-channels">
+            <li><a class="contact-row" href="https://wa.me/2348000000000" target="_blank" rel="noopener"><span class="contact-row__n">01</span><span class="contact-row__main"><b>WhatsApp</b><em>+234 800 000 0000</em></span><span class="contact-row__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+            <li><a class="contact-row" href="mailto:hello@salim.store"><span class="contact-row__n">02</span><span class="contact-row__main"><b>Email</b><em>hello@salim.store</em></span><span class="contact-row__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+            <li><a class="contact-row" href="tel:+2348000000000"><span class="contact-row__n">03</span><span class="contact-row__main"><b>Call</b><em>+234 800 000 0000</em></span><span class="contact-row__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+            <li><a class="contact-row" href="https://maps.google.com/?q=Lagos" target="_blank" rel="noopener"><span class="contact-row__n">04</span><span class="contact-row__main"><b>Visit</b><em>12 Example Street, Lagos</em></span><span class="contact-row__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection mega dropdown -->
+  <div class="mega" id="mega">
+    <div class="mega__panel">
+      <div class="mega__solid"></div>
+
+      <div class="mega__left">
+        <p class="mega__label">COLLECTIONS</p>
+        <ul class="mega__list">
+          <li class="mega__hl" aria-hidden="true"></li>
+          <li><a href="#collection" class="mega__row" style="--i:0" data-collection-key="gold" data-img="assets/images/watch2.png" data-title="Gold Classics" data-desc="Polished gold cases and clean dials, chosen for people who notice the details." data-count="12 PIECES"><span class="num">01</span><span class="name">Gold Classics</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a></li>
+          <li><a href="#collection" class="mega__row" style="--i:1" data-collection-key="diamond" data-img="assets/images/watch3.png" data-title="Diamond Edition" data-desc="Hand-set stones that catch every bit of light. Made to be noticed." data-count="8 PIECES"><span class="num">02</span><span class="name">Diamond Edition</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a></li>
+          <li><a href="#collection" class="mega__row" style="--i:2" data-collection-key="everyday" data-img="assets/images/watch.png" data-title="Everyday Icons" data-desc="Clean black dials and gold cases you can wear every single day." data-count="15 PIECES"><span class="num">03</span><span class="name">Everyday Icons</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a></li>
+          <li><a href="#collection" class="mega__row" style="--i:3" data-collection-key="limited" data-img="assets/images/watch3.png" data-title="Limited Pieces" data-desc="Small runs, rare finishes. A watch worth passing on." data-count="5 PIECES"><span class="num">04</span><span class="name">Limited Pieces</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a></li>
+        </ul>
+        <p class="mega__hint">Hover a collection to preview</p>
+      </div>
+
+      <div class="mega__right">
+        <div class="mega__stage">
+          <span class="mega__orb" aria-hidden="true"></span>
+          <img class="mega__img is-active" src="assets/images/watch2.png" alt="" />
+          <img class="mega__img" alt="" />
+        </div>
+        <div class="mega__meta in">
+          <h3 class="mega__title">Gold Classics</h3>
+          <p class="mega__desc">Polished gold cases and clean dials, chosen for people who notice the details.</p>
+          <div class="mega__foot">
+            <span class="mega__count">12 PIECES</span>
+            <a href="#collection" class="mega__go">View all
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Burger menu panel -->
+  <div class="menu" id="menu" aria-label="Collections menu">
+    <div class="menu__panel">
+      <div class="menu__left">
+        <p class="mega__label">SHOP BY CATEGORY</p>
+
+        <div class="menu__cat is-active" style="--i:0">
+          <a href="#collection" class="menu__row" data-collection-key="gold" data-img="assets/images/watch2.png" data-title="Gold Classics" data-desc="Polished gold cases and clean dials, chosen for people who notice the details." data-count="12 PIECES"><span class="num">01</span><span class="name">Gold Classics</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
+          <div class="menu__fold"><div class="menu__roll">
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Oyster Gold 36" data-count="GOLD CLASSICS"><img src="assets/images/watch.png" alt="" />Oyster Gold 36</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Heritage Date" data-count="GOLD CLASSICS"><img src="assets/images/watch2.png" alt="" />Heritage Date</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Crown Linear" data-count="GOLD CLASSICS"><img src="assets/images/watch3.png" alt="" />Crown Linear</a>
+          </div></div>
+        </div>
+
+        <div class="menu__cat" style="--i:1">
+          <a href="#collection" class="menu__row" data-collection-key="diamond" data-img="assets/images/watch3.png" data-title="Diamond Edition" data-desc="Hand-set stones that catch every bit of light. Made to be noticed." data-count="8 PIECES"><span class="num">02</span><span class="name">Diamond Edition</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
+          <div class="menu__fold"><div class="menu__roll">
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Iced Crown" data-count="DIAMOND EDITION"><img src="assets/images/watch3.png" alt="" />Iced Crown</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Pave Lady" data-count="DIAMOND EDITION"><img src="assets/images/watch.png" alt="" />Pave Lady</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Diamond Bezel" data-count="DIAMOND EDITION"><img src="assets/images/watch2.png" alt="" />Diamond Bezel</a>
+          </div></div>
+        </div>
+
+        <div class="menu__cat" style="--i:2">
+          <a href="#collection" class="menu__row" data-collection-key="everyday" data-img="assets/images/watch.png" data-title="Everyday Icons" data-desc="Clean black dials and gold cases you can wear every single day." data-count="15 PIECES"><span class="num">03</span><span class="name">Everyday Icons</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
+          <div class="menu__fold"><div class="menu__roll">
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Noir Date" data-count="EVERYDAY ICONS"><img src="assets/images/watch2.png" alt="" />Noir Date</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Slate 38" data-count="EVERYDAY ICONS"><img src="assets/images/watch3.png" alt="" />Slate 38</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Daily Gold" data-count="EVERYDAY ICONS"><img src="assets/images/watch.png" alt="" />Daily Gold</a>
+          </div></div>
+        </div>
+
+        <div class="menu__cat" style="--i:3">
+          <a href="#collection" class="menu__row" data-collection-key="limited" data-img="assets/images/watch3.png" data-title="Limited Pieces" data-desc="Small runs, rare finishes. A watch worth passing on." data-count="5 PIECES"><span class="num">04</span><span class="name">Limited Pieces</span><svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a>
+          <div class="menu__fold"><div class="menu__roll">
+            <a href="#collection" class="menu__item" data-img="assets/images/watch.png" data-title="Series 01" data-count="LIMITED PIECES"><img src="assets/images/watch.png" alt="" />Series 01</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch3.png" data-title="Founders Cut" data-count="LIMITED PIECES"><img src="assets/images/watch3.png" alt="" />Founders Cut</a>
+            <a href="#collection" class="menu__item" data-img="assets/images/watch2.png" data-title="Atelier No. 5" data-count="LIMITED PIECES"><img src="assets/images/watch2.png" alt="" />Atelier No. 5</a>
+          </div></div>
+        </div>
+
+        <a class="mega__hint menu__hint" href="#collection">View all collections</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-backdrop" id="cartBackdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart" aria-hidden="true" inert>
+    <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <header class="cart-drawer__header">
+        <h2 id="cartTitle">Your cart</h2>
+        <button class="cart-drawer__close" type="button" aria-label="Close cart" data-cart-close>
+          <span></span><span></span>
+        </button>
+      </header>
+      <div class="cart-drawer__body">
+        <p class="cart-drawer__empty" id="cartEmpty">Your cart is empty.</p>
+        <ul class="cart-drawer__items" id="cartItems" aria-live="polite"></ul>
+        <div class="cart-drawer__foot">
+          <button class="cart-drawer__clear" id="cartClear" type="button" hidden>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+            <span>Clear cart</span>
+          </button>
+          <a class="cart-drawer__shop" id="cartShop" href="#shop" data-cart-close>Shop now</a>
+          <button class="cart-drawer__shop cart-drawer__view" id="cartView" type="button" hidden>View cart</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="assets/js/home.js"></script>
+  <script>
+    (() => {
+      const nums = document.querySelectorAll("#stats [data-count], .about-stats [data-count]");
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const run = (el) => {
+        const end = +el.dataset.count;
+        if (reduce) { el.textContent = end; return; }
+        if (el.closest(".about-stats")) {          // lock the width so the "+" doesn't jump while counting
+          el.style.display = "inline-block";
+          el.textContent = end;
+          el.style.minWidth = el.getBoundingClientRect().width + "px";
+          el.textContent = 0;
+        }
+        const t0 = performance.now(), dur = 1600;
+        (function tick(now) {
+          const k = Math.min(1, (now - t0) / dur);
+          el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3)));
+          if (k < 1) requestAnimationFrame(tick);
+        })(t0);
+      };
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { run(e.target); io.unobserve(e.target); } });
+      }, { threshold: 0.6 });
+      nums.forEach((n) => io.observe(n));
+    })();
+  </script>
+  <script>
+    (() => {
+      const hero = document.getElementById("hero");
+      const nav = hero.querySelector(".nav");
+      const bar = document.getElementById("mobileNav");
+      let wasFloating = null;
+      function update() {
+        const bottom = hero.getBoundingClientRect().bottom;
+        nav.classList.toggle("is-solid", bottom <= 78);                    // header turns solid once the hero is under it
+        const floating = bottom < window.innerHeight - 32;                 // bottom bar detaches once it leaves the hero
+        bar.classList.toggle("is-floating", floating);
+        if (floating !== wasFloating) {
+          wasFloating = floating;
+          setTimeout(() => window.dispatchEvent(new Event("resize")), 480); // re-align the active pill
+        }
+      }
+      window.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
+    })();
+  </script>
+  <script>
+    (() => {
+      const WHATSAPP = "2348000000000";        // your number, country code first, no + or spaces
+      const EMAIL = "hello@salim.store";
+ 
+
+      const section = document.getElementById("contact");
+      const bubble = document.getElementById("contactBubble");
+      const name = document.getElementById("contactName");
+      const watch = document.getElementById("contactWatch");
+      const wa = document.getElementById("contactWa");
+      const mail = document.getElementById("contactMail");
+ 
+
+      function compose() {
+        const topic = section.querySelector("input[name=contactTopic]:checked").value;
+        const who = name.value.trim();
+        const what = watch.value.trim();
+        return `Hi SALIM${who ? ", it's " + who : ""}. ${topic}${what ? " (" + what + ")" : ""}. Can you help?`;
+      }
+      let swapTimer;
+      function update(animate) {
+        const text = compose();
+        const apply = () => {
+          bubble.textContent = text;
+          bubble.classList.remove("is-swap");
+          wa.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
+          mail.href = `mailto:${EMAIL}?subject=${encodeURIComponent("Hello from the SALIM site")}&body=${encodeURIComponent(text)}`;
+        };
+        if (!animate) return apply();
+        bubble.classList.add("is-swap");
+        clearTimeout(swapTimer);
+        swapTimer = setTimeout(apply, 150);
+      }
+      section.querySelectorAll("input[name=contactTopic]").forEach((r) => r.addEventListener("change", () => update(true)));
+      [name, watch].forEach((i) => i.addEventListener("input", () => update(false)));
+      update(false);
+
+ 
+
+      // cursor glow on the channel rows
+      section.querySelectorAll(".contact-row").forEach((row) =>
+        row.addEventListener("pointermove", (e) => {
+          const r = row.getBoundingClientRect();
+          row.style.setProperty("--mx", e.clientX - r.left + "px");
+          row.style.setProperty("--my", e.clientY - r.top + "px");
+        })
+      );
+
+      // smooth reveal on scroll
+      const items = section.querySelectorAll("[data-reveal]");
+      if (!("IntersectionObserver" in window)) { items.forEach((i) => i.classList.add("is-in")); return; }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+      }, { threshold: 0.15 });
+      items.forEach((i) => io.observe(i));
+    })();
+  </script>
+</body>
+</html>
